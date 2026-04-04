@@ -1,8 +1,6 @@
 ---
 title: "ImaginaryCTF 2026 - BlindSPOT (Web)"
 date: 2026-04-04 12:00:00 +0900
-categories: [CTF, Web]
-tags: [sqli, blind-sql-injection, python, ctf-writeup]
 ---
 
 ## Challenge Info

@@ -22,8 +22,8 @@ date: YYYY-MM-DD HH:MM:SS +0900
 - 예: 오늘이 2026-04-05 13:30:00 이면 → `date: 2026-04-05 13:00:00`
 
 ### 카테고리와 태그
-- **소문자**를 사용한다. Chirpy 테마는 링크 생성 시 Jekyll의 `slugify` 필터를 적용해 소문자로 변환하고(`CTF` → `/categories/ctf/`), jekyll-archives는 `:name` 그대로 페이지를 생성한다. Linux 빌드 서버는 대소문자를 구분하므로 대소문자가 다르면 깨진 링크로 처리된다.
-- 하이픈이 포함된 태그는 괜찮다: `blind-sql-injection`, `ctf-writeup`
+- **사용하지 않는다.** `categories`와 `tags` 프론트매터를 작성하지 않는다.
+- `_config.yml`에서 `jekyll-archives`가 비활성화되어 있다.
 
 ### 포스트 내 예시 URL
 - 펜스드 코드 블록(` ``` `)이나 인라인 백틱(`` ` ``) 안의 URL은 `<code>` 태그로 렌더링되어 htmlproofer가 검사하지 않으므로 안전하다.
