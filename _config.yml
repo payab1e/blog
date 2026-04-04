@@ -84,6 +84,9 @@ pageviews:
 #
 theme_mode: dark
 
+# Allow future-dated posts
+future: true
+
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
