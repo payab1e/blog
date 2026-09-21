@@ -1,0 +1,19 @@
+<!-- Keep every page in dark mode, including pages restored from the browser's back-forward cache. -->
+<meta name="color-scheme" content="dark">
+<script>
+  (() => {
+    const forceDarkMode = () => {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+      document.documentElement.removeAttribute('data-theme-persisted');
+
+      try {
+        localStorage.removeItem('theme');
+      } catch (_) {
+        // Dark mode still applies when browser storage is unavailable.
+      }
+    };
+
+    forceDarkMode();
+    window.addEventListener('pageshow', forceDarkMode);
+  })();
+</script>

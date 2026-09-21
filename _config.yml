@@ -137,7 +137,9 @@ assets:
 pwa:
   enabled: true # The option for PWA feature (installable)
   cache:
-    enabled: true # The option for PWA offline cache
+    # Disable page caching so an older light-mode build cannot be restored
+    # while navigating between tabs.
+    enabled:
     # Paths defined here will be excluded from the PWA cache.
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
